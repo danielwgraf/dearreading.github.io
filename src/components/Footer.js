@@ -47,11 +47,11 @@ const Footer = class extends React.Component {
                     <li>
                       <a
                         className="navbar-item"
-                        href="/admin/"
+                        href="/castle/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Admin
+                        Castle
                       </a>
                     </li>
                   </ul>
