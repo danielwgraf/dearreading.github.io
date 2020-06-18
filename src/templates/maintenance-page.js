@@ -10,17 +10,35 @@ const Char = {
   fontFamily: 'Raleway, sans-serif',
   color: 'black',
   // fontWeight: '900',
-  fontSize: '4rem',
+  fontSize: '5rem',
   verticalAlign: 'top',
 }
 
 const Small = {
-  fontSize: '3rem',
+  fontSize: '4rem',
 }
 
 const Underline = {
   textDecoration: 'underline',
-  textDecorationColor: 'pink',
+  textDecorationColor: 'black',
+}
+
+const Overline = {
+  textDecoration: 'overline',
+  textDecorationColor: 'black',
+  verticalAlign: 'bottom',
+}
+
+const AccentBlue = {
+  textDecorationColor: '#0f75bc',
+}
+
+const AccentRed = {
+  textDecorationColor: '#ed1c24',
+}
+
+const AccentYellow = {
+  textDecorationColor: '#fff200',
 }
 
 const Blue = {
@@ -52,20 +70,22 @@ export const MaintenancePageTemplate = ({
     >
       <div
         style={{
-          backgroundColor: 'blue',
           display: 'flex',
           height: '100%',
           width: '100%',
           // height: '150px',
           lineHeight: '1',
           justifyContent: 'space-around',
-          alignItems: 'left',
+          alignItems: 'center',
           flexDirection: 'column',
         }}
       >
         <div
           style={{
-            backgroundColor: 'green',
+            height: '60vh',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
           }}
         >
           <h1
@@ -74,34 +94,63 @@ export const MaintenancePageTemplate = ({
               // color: 'white',
               lineHeight: '1',
               padding: '0.25em',
+              alignItems: 'center',
+              textAlign: 'center',
+              verticalTextAlign: 'center',
+              justifyContent: 'center',
             }}
           >
             <span style={{...Char, ...Blue}}>#</span>
-            <span style={{...Char, ...Red, ...Small}}>U</span>
-            <span style={Char}>N</span>
+            <span style={{...Char}}>U</span>
+            <span style={{...Char, ...Red, ...Small, ...Underline, ...AccentYellow}}>N</span>
             <span className='mytest' style={Char}>D</span>
             <span style={Char}>E</span>
-            <span style={Char}>R</span>
-
-            <span style={Char}>C</span>
-            <span style={Char}>O</span>
+            <span style={{...Char, ...Blue}}>R</span>
+            <span> </span>
+            <span style={{...Char, ...Red}}>C</span>
+            <span style={{...Char, ...Yellow, ...Small, ...Overline}}>O</span>
             <span style={Char}>N</span>
-            <span style={Char}>S</span>
+            <span style={{...Char, ...Blue}}>S</span>
             <span style={Char}>T</span>
-            <span style={Char}>R</span>
+            <span style={{...Char, ...Red}}>R</span>
             <span style={Char}>U</span>
             <span style={Char}>C</span>
-            <span style={Char}>T</span>
-            <span style={Char}>I</span>
+            <span style={{...Char, ...Blue, ...Small, ...Overline, ...AccentRed}}>T</span>
+            <span style={{...Char, ...Yellow}}>I</span>
             <span style={Char}>O</span>
-            <span style={Char}>N</span>
+            <span style={{...Char, ...Red, ...Small, ...Underline, ...AccentYellow}}>N</span>
           </h1>
         </div>
         <div
+          style={{
+            width: '100%',
+            height: '33vh',
+            backgroundColor: 'white',
+            // borderTopColor: '#F50',
+            // borderTopWidth: '3px',
+            // borderTopStyle: 'solid',
+            // boxSizing: 'border-box',
+            // borderTopWidth: '1px',
+            // borderTopColor: 'green',
+            alignItems: 'center',
+            justifyContent: 'center',
+            textAlign: 'center',
+            position: 'relative',
+          }}
         >
-          <iframe 
-            width="100%"
-            height="300"
+          <div 
+            style={{
+              height: '3px',
+              width: '100%',
+              backgroundColor: '#F50',
+              position: 'absolute',
+              top: 0,
+              left: 0,
+            }}
+          />
+          <iframe
+            width="30%"
+            height="100%"
             scrolling="no"
             frameborder="no" 
             allow="autoplay" 
