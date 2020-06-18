@@ -7,14 +7,18 @@ import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 
 const Char = {
+  fontFamily: 'Raleway, sans-serif',
   color: 'black',
-  fontWeight: '900',
+  // fontWeight: '900',
   fontSize: '4rem',
   verticalAlign: 'top',
 }
 
 const Small = {
   fontSize: '3rem',
+}
+
+const Underline = {
   textDecoration: 'underline',
   textDecorationColor: 'pink',
 }
@@ -75,7 +79,7 @@ export const MaintenancePageTemplate = ({
             <span style={{...Char, ...Blue}}>#</span>
             <span style={{...Char, ...Red, ...Small}}>U</span>
             <span style={Char}>N</span>
-            <span style={Char}>D</span>
+            <span className='mytest' style={Char}>D</span>
             <span style={Char}>E</span>
             <span style={Char}>R</span>
 
