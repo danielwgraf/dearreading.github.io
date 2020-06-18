@@ -38,7 +38,7 @@ export const MaintenancePageTemplate = ({
             padding: '0.25em',
           }}
         >
-          Site is Under Development
+          Site is Currently Under Development
         </h1>
       </div>
     </div>
