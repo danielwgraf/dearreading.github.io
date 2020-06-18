@@ -7,13 +7,7 @@ import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 
 export const MaintenancePageTemplate = ({
-  image,
   title,
-  heading,
-  subheading,
-  mainpitch,
-  description,
-  intro,
 }) => (
   <div>
     <div
@@ -52,15 +46,7 @@ export const MaintenancePageTemplate = ({
 )
 
 MaintenancePageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
-  heading: PropTypes.string,
-  subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
-  description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
 }
 
 const MaintenancePage = ({ data }) => {
@@ -69,13 +55,7 @@ const MaintenancePage = ({ data }) => {
   return (
     <BlankLayout>
       <MaintenancePageTemplate
-        image={frontmatter.image}
         title={frontmatter.title}
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
       />
     </BlankLayout>
   )
@@ -96,34 +76,6 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "maintenance-page" } }) {
       frontmatter {
         title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        heading
-        subheading
-        mainpitch {
-          title
-          description
-        }
-        description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            text
-          }
-          heading
-          description
-        }
       }
     }
   }
