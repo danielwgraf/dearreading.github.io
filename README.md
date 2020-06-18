@@ -29,6 +29,7 @@ It follows the [JAMstack architecture](https://jamstack.org) by using Git as a s
 - Node (I recommend using v8.2.0 or higher)
 - [Gatsby CLI](https://www.gatsbyjs.org/docs/)
 - [Netlify CLI](https://github.com/netlify/cli)
+- (/usr/local/Cellar/node/13.7.0/bin/ntl)
 
 ## Getting Started (Recommended)
 
