@@ -1,0 +1,72 @@
+
+.dearreading-header {
+  line-height: 1;
+  padding: 0.25em;
+  align-items: center;
+  text-align: center;
+  vertical-align: center;
+  justify-content: center;
+
+  .char {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-size: 5rem;
+    vertical-align: top;
+
+    @media screen and (max-width: $med) { 
+      font-size: 4rem;
+    }
+
+    @media screen and (max-width: $small) { 
+      font-size: 3rem;
+    }
+
+  }
+
+  .small {
+    font-size: 4rem;
+
+    @media screen and (max-width: $med) { 
+      font-size: 3rem;
+    }
+
+    @media screen and (max-width: $small) { 
+      font-size: 2.5rem;
+    }
+  }
+
+  .underline {
+    text-decoration: underline;
+    text-decoration-color: black;
+  }
+
+  .overline {
+    text-decoration: overline;
+    text-decoration-color: black;
+    vertical-align: bottom;
+  }
+
+  .accentBlue {
+    text-decoration-color: #0f75bc;
+  }
+
+  .accentRed {
+    text-decoration-color: #ed1c24;
+  }
+
+  .accentYellow {
+    text-decoration-color: #fff200;
+  }
+
+  .blue {
+    color: #0f75bc;
+  }
+
+  .red {
+    color: #ed1c24;
+  }
+
+  .yellow {
+    color: #fff200;
+  }
+}
