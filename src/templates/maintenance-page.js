@@ -42,7 +42,7 @@ export class MaintenancePageTemplate extends Component {
             className="wrapper"
           >
             <div className="text-wrapper">
-              <h1 className="dearreading-header has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen">
+              <h1 className="dearreading-header dearreading-text has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen">
                 <span className="char blue">#</span>
                 <span className="char">U</span>
                 <span className="char red small underline accentYellow">N</span>

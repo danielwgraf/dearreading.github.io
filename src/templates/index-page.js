@@ -19,9 +19,9 @@ export const IndexPageTemplate = ({
     <div
       className="full-width-image margin-top-0"
       style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
+        // backgroundImage: `url(${
+        //   !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+        // })`,
         backgroundPosition: `top left`,
         backgroundAttachment: `fixed`,
       }}
@@ -36,20 +36,18 @@ export const IndexPageTemplate = ({
           flexDirection: 'column',
         }}
       >
-        <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-          style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
-          {title}
+        <h1 className="dearreading-header dearreading-text has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen">
+          <span className="char blue">#</span>
+          <span className="char">D</span>
+          <span className="char red small underline accentYellow">E</span>
+          <span className="char">A</span>
+          <span className="char blue">R</span>
+          <span> </span>
+          <span className="char">R</span>
+          <span className="char yellow ">D</span>
+          <span className="char small overline accentBlue">G</span>
         </h1>
-        <h3
+        {/* <h3
           className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
             boxShadow:
@@ -61,7 +59,7 @@ export const IndexPageTemplate = ({
           }}
         >
           {subheading}
-        </h3>
+        </h3> */}
       </div>
     </div>
     <section className="section section--gradient">

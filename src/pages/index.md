@@ -1,16 +1,13 @@
 ---
 templateKey: index-page
-title: Great coffee with a testing conscience
-image: /img/home-jumbotron.jpg
+title: "#DEAR RDG"
+image: /img/skyline.jpg
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:
-  title: Why Kaldi
+  title: Made in Reading
   description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    Hosted by Marquise Richards, Marie Sykes, Brianna Tyson, & Dayquan Williams, Dear Reading is a podcast that highlights how Reading has shaped us while also discussing pop cultures & news. We're looking to promote local businesses & artists.
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
