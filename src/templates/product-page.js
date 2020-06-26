@@ -183,6 +183,16 @@ export const productPageQuery = graphql`
             }
             text
           }
+          creators {
+            headshot {
+              childImageSharp {
+                fluid(maxWidth: 240, quality: 64) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            bio
+          }
           heading
           description
         }
