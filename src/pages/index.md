@@ -56,6 +56,7 @@ intro:
   creators:
     - headshot: /img/meeting-space.png
       bio: Testing this thing out
+      name: Name1
 main:
   heading: Great coffee with no compromises
   description: >
